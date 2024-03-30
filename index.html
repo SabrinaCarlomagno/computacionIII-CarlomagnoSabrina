@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html></html>
+<html></html> <!--la etiqueta de cierre del html tiene que estar siempre en la última línea porque contiene todo-->
 <head>
     <meta charset="utf-8"/>
     <title>Curriculum Sabrina Carlomagno</title>
 </head>
 <body>
+    <!--falta el header, que no es lo mismo que el head, debería ser información constante en una web completa-->
     <main>
         <section>
             <img src="img/perfil.jpg" width="220px" height="220px" alt="foto de presentacion"/>
@@ -13,12 +14,12 @@
             <h5>14/11/2002</h5>
         </section>
         <section>
-            <br><h2>SOBRE MÍ</h2>
+            <br><h2>SOBRE MÍ</h2> <!--no uses br, después lo vas a acomodar cuando veamos flexbox-->
             <p>Diseñadora gráfica cursando actualmente el 4to año de la Licenciatura en Diseño y Comunicación Visual. Mis puntos fuertes e intereses son principalmente el diseño editorial y tipográfico, de igual manera estoy apta para realizar trabajos de branding, identidad visual, diseño de información, así como posters, afiches, tapas de revistas/libros, etc. Sé trabajar en equipo y en solitario y tengo facilidad para adaptarme a cualquier tipo de situación y entorno. Creo en la organización tanto del espacio como de los tiempos para conseguir un buen resultado final.</p>
         </section>
         <section>
             <br><h2>EDUCACIÓN</h2>
-            <li>Licenciatura en Diseño y Comunicación Visual</li>
+            <li>Licenciatura en Diseño y Comunicación Visual</li> <!--todos los <li> van contenidos en una <ul> mayor, y los <li> pueden tener más cosas en su interior-->
             <p>Universidad Nacional de Lanús (UNLa) 
                 <br>Lanús, Argentina
                 <br>2021-presente
@@ -28,8 +29,22 @@
                 <br>Lomas de Zamora, Argentina
                 <br>2006-2020
             </p>
+            <!--esto podríamos hacerlo de la siguiente forma:
+
+            <ul>
+                <li>
+                    <h3>título</h3> o la h que quieras ponerle
+                    <p>ubicación<p>
+                    <p>año</p>
+                </li>
+                <li>
+                    <h3>título</h3>
+                    <p>ubicación<p>
+                    <p>año</p>
+                </li>
+            </ul> -->
         </section>
-        <section>
+        <section> <!--esta section tiene el mismo problema que la anterior-->
             <br><h2>HABILIDADES</h2>
             <li>Manejo de InDesign</li>
             <li>Manejo de Illustrator</li>
@@ -39,16 +54,16 @@
             <li>Canva</li>
             <li>Editores de video</li>
         </section>
-        <section>
+        <section> <!--idem-->
             <br><h2>IDIOMAS</h2>
             <li>Español - Nivel nativo</li> 
             <li>Inglés - Nivel avanzado</li>
         </section>
     </main>
     <footer>
-        <br><h2>CONTACTO</h2>
-        <img src="img/telefono.png" width="25px" height="25px" alt="telefono"/>
-        <span>11-3862-0011</span>
+        <br><h2>CONTACTO</h2>  <!--revisa el apunte de etiquetas que hay un par de etiquetas semánticamente más adecuado para el contacto-->
+        <img src="img/telefono.png" width="25px" height="25px" alt="telefono"/> <!--esto está muy bien, pero más adelante fijate si te animás a usar archivos .svg-->
+        <span>11-3862-0011</span> <!--la etiqueta span sirve para hacer un cambio interno dentro de otro texto pero no se utiliza solo, acá debería ir una p -->
         <br><img src="img/mail.png" width="25px" height="25px" alt="mail"/>
         <span>sabrinaailenc@gmail.com</span>
         <br><img src="img/instagram.png" width="25px" height="25px" alt="instagram"/>
@@ -57,3 +72,4 @@
         <span>Sabrina Carlomagno</span>
     </footer>
 </body>
+<!--falta cierre de etiqueta html-->
