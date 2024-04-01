@@ -1,1 +1,1 @@
-# computacionIII-CarlomagnoSabrina
+# CarlomagnoSabrina-CURRICULUM Compu III
