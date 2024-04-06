@@ -5,6 +5,8 @@
 
 .foto {
     border-radius: 25px;
+    border-color: palevioletred;
+    border-style: dashed;
 }
 
 body {
