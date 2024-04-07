@@ -14,13 +14,13 @@ body {
     font-size: medium;
     margin: auto;
     border: 4px double pink;
-    padding-left: 200px;
+    padding-left: 200px; /*no está bueno que el body tenga estos márgenes para centrar, porque en pantallas más pequeñas van a quedar enormes, además ya aplicaste flex lo que hace que si quitás estos valores siga en el medio y bien centrado*/
     padding-right: 200px;
     background-color: rgb(245, 245, 236);
-    display: flex;
+    display: flex; /*una cosa que te faltaría agregar es la dirección de flex porque si lo dejás así como está posiblemente se te haga un choclo todo en horizontal*/
     justify-content:center;
-    width: 1200px;
-    height: 1980x;
+    width: 1200px; /*tampoco está bueno usar medidas fijas en este tipo de anchos, los porcentajes van mejor, pero de nuevo no está bueno aplicarlo al body, yo utilizaría para los elementos internos (header main footer) la propiedad max-width en píxeles, y una priopiedad width en porcentaje, digamos 90% así nos podemos olvidar de los paddings*/
+    height: 1980x; /*alturas fijas mucho menos, que el tamaño de las cosas las de el contenido*/
 }
 
 h1 {
@@ -28,6 +28,9 @@ h1 {
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+    /*acá podríamos hacer una sola línea de padding
+    padding: 20px 20px 20px 0;
+    donde el primer valor es top, el segundo right, el tercero bottom y el 4to 0*/
 
 }
 
@@ -38,12 +41,15 @@ div {
 h5 {
     padding-top: 20px;
     padding-bottom: 20px;
+    /*otra forma de escribir en una sola línea es así:
+    padding: 20px 0;
+    donde el primer valor es top y bottom, y el segundo left y right*/
 }
 
 h2 {
     color: palevioletred;
     padding-bottom: 20px;
-    padding-top: 10px;
+    padding-top: 10px; /*fijate de arreglar todos los paddings y margins*/
 }
 
 .recuadro {
