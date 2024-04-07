@@ -10,7 +10,6 @@
 }
 
 body {
-    width: 600px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: medium;
     margin: auto;
@@ -18,6 +17,10 @@ body {
     padding-left: 200px;
     padding-right: 200px;
     background-color: rgb(245, 245, 236);
+    display: flex;
+    justify-content:center;
+    width: 1200px;
+    height: 1980x;
 }
 
 h1 {
@@ -64,6 +67,9 @@ li {
 footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(219, 95, 153);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 p {
