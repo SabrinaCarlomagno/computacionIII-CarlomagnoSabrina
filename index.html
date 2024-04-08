@@ -6,19 +6,30 @@
     <link href="estilos.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <!--y el header???-->
+    <header>
+        <nav>
+            <a href="#educacion" target="_self">Educación</a>
+            <a href="#habilidades" target="_self">Habilidades</a>
+            <a href="#idiomas" target="_self">Idiomas</a>
+            <a href="#contacto" target="_self">Contacto</a>
+        </nav>
+    </header>
     <main>
-        <div>
-            <img src="img/perfil.jpg" width="220px" height="220px" alt="foto de presentacion" class="foto personal"/>
-            <h1>Sabrina Ailén Carlomagno</h1>
-            <h4>DISEÑADORA GRÁFICA</h4>
-        </div>
-        <div class="recuadro-rosa">
+        <section class="foto-nombre">
+            <div>
+                <img src="img/perfil.jpg" width="220px" height="220px" alt="foto de presentacion" class="foto personal"/>
+            </div>
+            <div class="mi-nombre">
+                <h1>Sabrina Ailén Carlomagno</h1>
+                <h4>DISEÑADORA GRÁFICA</h4>
+            </div>
+        </section>
+        <section class="recuadro-rosa">
             <h2>SOBRE MÍ</h2>
             <p>Diseñadora gráfica cursando actualmente el 4to año de la Licenciatura en Diseño y Comunicación Visual. Mis puntos fuertes e intereses son principalmente el diseño editorial y tipográfico, de igual manera estoy apta para realizar trabajos de branding, identidad visual, diseño de información, así como posters, afiches, tapas de revistas/libros, etc. Sé trabajar en equipo y en solitario y tengo facilidad para adaptarme a cualquier tipo de situación y entorno. Creo en la organización tanto del espacio como de los tiempos para conseguir un buen resultado final.</p>
-        </div>
-        <section>
-            <h2>EDUCACIÓN</h2>
+        </section>
+        <section id="educacion">
+            <h2 class="titulo-educacion">EDUCACIÓN</h2>
         <ul>
             <li>
                 <h4>Licenciatura en Diseño y Comunicación Visual</h4>
@@ -34,7 +45,7 @@
             </li>
         </ul>
         </section>
-        <section>
+        <section id="habilidades">
             <h2>HABILIDADES</h2>
             <ul>
                 <li>Manejo de InDesign</li>
@@ -46,7 +57,7 @@
                 <li>Editores de video</li>
             </ul>
         </section>
-        <section>
+        <section id="idiomas">
             <h2>IDIOMAS</h2>
             <ul>
                 <li>Español - Nivel nativo</li>
@@ -55,8 +66,7 @@
         </section>
     </main>
     <footer>
-            <address>
-                <h2>-CONTACTO-</h2>
+            <address id="contacto">
                 <img src="img/telefono.png" width="25px" height="25px" alt="foto de icono telefono"/>
                 <p><a href="https://wa.me/+541138620011" target="_blank">11-3862-0011</p></a> 
                 <img src="img/mail.png" width="25px" height="25px" alt="foto de icono de mail"/>

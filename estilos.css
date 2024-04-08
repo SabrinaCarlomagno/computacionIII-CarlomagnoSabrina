@@ -3,6 +3,44 @@
     padding: 0px;
 }
 
+nav {
+    width: 1180px;
+    height: 70%;
+    background-color: rgba(255, 165, 220, 0.356);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    padding: 20px 60px 20px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: rgb(219, 95, 153);
+    text-decoration: underline;
+}
+
+header a:hover {
+    color: deeppink;
+    background-color: rgba(240, 121, 180, 0.308);
+    padding: 4px 10px 4px 10px;
+}
+
+.foto-nombre {
+    padding: 0px 0px 40px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+}
+
+.mi-nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+
 .foto {
     border-radius: 25px;
     border-color: palevioletred;
@@ -12,56 +50,50 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: medium;
-    margin: auto;
-    border: 4px double pink;
-    padding-left: 200px; /*no está bueno que el body tenga estos márgenes para centrar, porque en pantallas más pequeñas van a quedar enormes, además ya aplicaste flex lo que hace que si quitás estos valores siga en el medio y bien centrado*/
-    padding-right: 200px;
     background-color: rgb(245, 245, 236);
-    display: flex; /*una cosa que te faltaría agregar es la dirección de flex porque si lo dejás así como está posiblemente se te haga un choclo todo en horizontal*/
-    justify-content:center;
-    width: 1200px; /*tampoco está bueno usar medidas fijas en este tipo de anchos, los porcentajes van mejor, pero de nuevo no está bueno aplicarlo al body, yo utilizaría para los elementos internos (header main footer) la propiedad max-width en píxeles, y una priopiedad width en porcentaje, digamos 90% así nos podemos olvidar de los paddings*/
-    height: 1980x; /*alturas fijas mucho menos, que el tamaño de las cosas las de el contenido*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 60%;
+}
+
+.recuadro-rosa {
+    border: 4px solid pink;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 h1 {
     color: palevioletred;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    /*acá podríamos hacer una sola línea de padding
     padding: 20px 20px 20px 0;
-    donde el primer valor es top, el segundo right, el tercero bottom y el 4to 0*/
-
+    font-size: 3em;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 div {
     padding-top: 20px;
 }
 
+.titulo-educacion {
+    padding-top: 40px;
+}
+
 h4 {
     padding-bottom: 20px;
-    /*otra forma de escribir en una sola línea es así:
-    padding: 20px 0;
-    donde el primer valor es top y bottom, y el segundo left y right*/
 }
 
 h2 {
     color: palevioletred;
-    padding-bottom: 20px;
-    padding-top: 10px; /*fijate de arreglar todos los paddings y margins*/
-}
-
-.recuadro-rosa {
-    width: auto;
-    height: auto;
-    border: 4px solid pink;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 20px;
+    padding: 20px 0 20px 0;
 }
 
 ul {
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 li {
@@ -70,27 +102,38 @@ li {
 }
 
 footer {
+    width: 60%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(219, 95, 153);
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
 }
 
 p {
-    padding-top: 5px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding: 5px 20px 20px 5px;
 }
 
-a {
-    text-decoration: underline;
+footer {
+    height: max-content;
+    width: 70%;
+    background-color: rgba(255, 165, 220, 0.356);
+}
+
+footer address {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer a {
+    text-decoration: none;
     color: rgb(219, 95, 153);
+    text-decoration: underline;
+    font-size: 1em;
 }
 
-a:hover {
+footer a:hover {
     color: deeppink;
-    background-color: rgb(255, 210, 216);
+    background-color: rgba(253, 173, 184, 0.562);
     border-radius: 15px;
     padding: 4px 10px 4px 10px;
     margin: 3px;
