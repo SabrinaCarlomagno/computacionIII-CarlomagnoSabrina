@@ -16,15 +16,17 @@ nav {
     align-items: center;
 }
 
+a {
+    cursor: url(img/cursor\ click.png), auto;
+}
+
 header a {
     color: rgb(219, 95, 153);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 header a:hover {
-    color: deeppink;
-    background-color: rgba(240, 121, 180, 0.308);
-    padding: 4px 10px 4px 10px;
+    color: rgb(255, 2, 78);
 }
 
 .foto-nombre {
@@ -54,6 +56,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: url(img/cursor.png), auto;
 }
 
 main {
@@ -93,12 +96,35 @@ h2 {
 }
 
 ul {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 li {
     padding-bottom: 15px;
     list-style: circle;
+}
+
+.mis-ilustraciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.priest {
+    padding: 5px;
+}
+
+.priest-dos {
+    padding: 5px;
+}
+
+.crowley {
+    padding: 5px;
+}
+
+.hikari-asami {
+    padding: 5px;
 }
 
 footer {
