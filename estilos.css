@@ -4,8 +4,8 @@
 }
 
 nav {
-    width: 1180px;
-    height: 70%;
+    width: 1180px; /* no se recomiendan los anchos fijos porque cuando vayamos a responsive esto te va a traer muchos problemas, mejor usar porcentajes*/
+    height: 70%; /*las alturas no se aplican en porcentajes porque las webs son infinitas y no tienen un tamaño en lo largo, lo que podrías usar son los vh que funcionan igual que los porcentajes pero significa viewport height, o sea, la altura del dispositivo.*/
     background-color: rgba(255, 165, 220, 0.356);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2em;
@@ -13,7 +13,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /*si quitás esta propiedad no va a cambiar nada, está de más*/
 }
 
 a {
@@ -30,7 +30,7 @@ header a:hover {
 }
 
 .foto-nombre {
-    padding: 0px 0px 40px 20px;
+    padding: 0px 0px 40px 20px; /*hay una propiedad que es gap y establece el espacio que hay entre los elementos hijos, si el 40px lo estás usando para separar la caja de la foto podrías aplicar un gap de 40px en el padre, o sea, la section foto-nombre. para aplicar gap es necesario que se haya aplicado flex */
     display: flex;
     flex-direction: row;
     align-items:flex-end;
@@ -147,7 +147,7 @@ footer address {
     padding: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around; /*este space arround está haciendo que todos los hijos tengan el mismo espacio, y lo que genera es que no se sepa qué ícono corresponde a qué texto, deberías sumar unos divs o poner la <a> adentro del <p> así están más cercanos*/
 }
 
 footer a {
