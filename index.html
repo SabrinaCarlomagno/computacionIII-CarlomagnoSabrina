@@ -11,14 +11,14 @@
             <a href="#educacion" target="_self">Educación</a>
             <a href="#habilidades" target="_self">Habilidades</a>
             <a href="#idiomas" target="_self">Idiomas</a>
-            <a href="#contacto" target="_self">Contacto</a>
             <a href="#ilustraciones" target="_self">Ilustraciones</a>
+            <a href="#contacto" target="_self">Contacto</a>
         </nav>
     </header>
     <main>
         <section class="foto-nombre">
             <div>
-                <img src="img/perfil.jpg" width="220px" height="220px" alt="foto de presentacion" class="foto personal"/> <!--las class van sin espacios porque el navegador lo toma como dos, o sea que acá hay una class "foto" y otra "personal"  -->
+                <img src="img/perfil.jpg" width="220px" height="220px" alt="foto de presentacion" class="foto-personal"/>
             </div>
             <div class="mi-nombre">
                 <h1>Sabrina Ailén Carlomagno</h1>
@@ -31,20 +31,20 @@
         </section>
         <section id="educacion">
             <h2 class="titulo-educacion">EDUCACIÓN</h2>
-        <ul> <!--mal indentado-->
-            <li>
-                <h4>Licenciatura en Diseño y Comunicación Visual</h4>
-                <p>Universidad Nacional de Lanús (UNLa)</p>
-                <p>Lanús, Argentina</p>
-                <p>2021-presente</p>
-            </li>
-            <li>
-                <h4>Bachiller en Arte - Artes Visuales</h4>
-                <p>Colegio Inmaculada Concepción (CIC)</p>
-                <p>Lomas de Zamora, Argentina</p>
-                <p>2006-2020</p>
-            </li>
-        </ul>
+                <ul>
+                    <li>
+                         <h4>Licenciatura en Diseño y Comunicación Visual</h4>
+                         <p>Universidad Nacional de Lanús (UNLa)</p>
+                         <p>Lanús, Argentina</p>
+                         <p>2021-presente</p>
+                    </li>
+                    <li>
+                        <h4>Bachiller en Arte - Artes Visuales</h4>
+                        <p>Colegio Inmaculada Concepción (CIC)</p>
+                        <p>Lomas de Zamora, Argentina</p>
+                        <p>2006-2020</p>
+                     </li>
+                 </ul>
         </section>
         <section id="habilidades">
             <h2>HABILIDADES</h2>
@@ -68,27 +68,35 @@
         <section id="ilustraciones">
             <h2>ALGUNAS ILUSTRACIONES</h2>
             <div class="mis-ilustraciones">
-                <a href="img/priestie gif 3.gif" target="_blank"> <!--los nombres de los archivos no llevan espacios!!!-->
-                    <img src="img/priestie gif 3.gif" width="520px" height="800px" alt="ilustración de priest" class="priest"/>
-                <a href="img/pri oscuro.jpg" target="_blank">
-                    <img src="img/pri oscuro.jpg" width="520px" height="800px" alt="ilustracion de priest 2" class="priest-dos"/>
+                <a href="img/priestie-gif.gif" target="_blank">
+                    <img src="img/priestie-gif.gif" width="520px" height="800px" alt="ilustración de priest" class="priest"/>
+                <a href="img/pri-oscuro.jpg" target="_blank">
+                    <img src="img/pri-oscuro.jpg" width="520px" height="800px" alt="ilustracion de priest 2" class="priest-dos"/>
                 <a href="img/crow.jpg" target="_blank">
                     <img src="img/crow.jpg" width="520px" height="520px" alt="ilustración del personaje crowley" class="crowley"/>
-                <a href="img/hikari y asami.jpg" target="_blank">
-                    <img src="img/hikari y asami.jpg" width="520px" height="520px" alt="ilustración de personajes originales" class="hikari-asami"/>
+                <a href="img/hikari-asami.jpg" target="_blank">
+                    <img src="img/hikari-asami.jpg" width="520px" height="520px" alt="ilustración de personajes originales" class="hikari-asami"/>
             </div>
         </section>
     </main>
     <footer>
             <address id="contacto">
-                <img src="img/telefono.png" width="25px" height="25px" alt="foto de icono telefono"/>
-                <p><a href="https://wa.me/+541138620011" target="_blank">11-3862-0011</p></a> 
-                <img src="img/mail.png" width="25px" height="25px" alt="foto de icono de mail"/>
-                <p><a href="mailto:sabrinaailenc@gmail.com" target="_blank">sabrinaailenc@gmail.com</p></a> 
-                <img src="img/instagram.png" width="25px" height="25px" alt="foto de icono instagram"/>
-                <p><a href="https://www.instagram.com/sabro_omi.art/" target="_blank">@sabro_omi.art</p></a>
-                <img src="img/behance.png" width="25px" height="25px" alt="foto de icono behance"/>
-                <p><a href="https://www.behance.net/sabrinacarloma" target="_blank">Sabrina Carlomagno</p></a>
+                <div class="telefono-wpp">
+                    <img src="img/telefono.png" width="25px" height="25px" alt="foto de icono telefono"/> <!--acá no se qué sucede que me quedó la imagen del icono del telefono como si tuviese una <a> y cuando lo apreto se abre uno de los dibujos??? pero no estoy pudiendo encontrar el error :( -->
+                    <p><a href="https://wa.me/+541138620011" target="_blank">11-3862-0011</a></p> 
+                </div>
+                <div class="mail">
+                    <img src="img/mail.png" width="25px" height="25px" alt="foto de icono de mail"/>
+                    <p><a href="mailto:sabrinaailenc@gmail.com" target="_blank">sabrinaailenc@gmail.com</p></a> 
+                </div>
+                <div class="instagram">
+                    <img src="img/instagram.png" width="25px" height="25px" alt="foto de icono instagram"/>
+                    <p><a href="https://www.instagram.com/sabro_omi.art/" target="_blank">@sabro_omi.art</p></a>
+                </div>
+                <div class="behance">
+                    <img src="img/behance.png" width="25px" height="25px" alt="foto de icono behance"/>
+                    <p><a href="https://www.behance.net/sabrinacarloma" target="_blank">Sabrina Carlomagno</p></a>
+                </div>
             </address>
     </footer>
 </body>

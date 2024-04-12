@@ -3,21 +3,23 @@
     padding: 0px;
 }
 
-nav {
-    width: 1180px; /* no se recomiendan los anchos fijos porque cuando vayamos a responsive esto te va a traer muchos problemas, mejor usar porcentajes*/
-    height: 70%; /*las alturas no se aplican en porcentajes porque las webs son infinitas y no tienen un tamaño en lo largo, lo que podrías usar son los vh que funcionan igual que los porcentajes pero significa viewport height, o sea, la altura del dispositivo.*/
+header {
+    width: 100%;
     background-color: rgba(255, 165, 220, 0.356);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2em;
     padding: 20px 60px 20px 60px;
+}
+
+header nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center; /*si quitás esta propiedad no va a cambiar nada, está de más*/
+    justify-content: center;
+    justify-content: space-around;
 }
 
 a {
-    cursor: url(img/cursor\ click.png), auto;
+    cursor: url(img/cursor-click.png), auto;
 }
 
 header a {
@@ -30,7 +32,8 @@ header a:hover {
 }
 
 .foto-nombre {
-    padding: 0px 0px 40px 20px; /*hay una propiedad que es gap y establece el espacio que hay entre los elementos hijos, si el 40px lo estás usando para separar la caja de la foto podrías aplicar un gap de 40px en el padre, o sea, la section foto-nombre. para aplicar gap es necesario que se haya aplicado flex */
+    padding-bottom: 40px; 
+    gap: 30px;
     display: flex;
     flex-direction: row;
     align-items:flex-end;
@@ -43,7 +46,7 @@ header a:hover {
     padding-left: 30px;
 }
 
-.foto {
+.foto-personal {
     border-radius: 25px;
     border-color: palevioletred;
     border-style: dashed;
@@ -127,27 +130,22 @@ li {
     padding: 5px;
 }
 
-footer {
-    width: 60%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(219, 95, 153);
-}
-
 p {
     padding: 5px 20px 20px 5px;
 }
 
 footer {
-    height: max-content;
     width: 70%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(219, 95, 153);
     background-color: rgba(255, 165, 220, 0.356);
 }
 
 footer address {
-    padding: 30px;
+    padding: 15px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around; /*este space arround está haciendo que todos los hijos tengan el mismo espacio, y lo que genera es que no se sepa qué ícono corresponde a qué texto, deberías sumar unos divs o poner la <a> adentro del <p> así están más cercanos*/
+    justify-content: space-evenly;
 }
 
 footer a {
@@ -163,4 +161,24 @@ footer a:hover {
     border-radius: 15px;
     padding: 4px 10px 4px 10px;
     margin: 3px;
+}
+
+.telefono-wpp {
+    display: flex;
+    flex-direction: row;
+}
+
+.mail {
+    display: flex;
+    flex-direction: row;
+}
+
+.instagram {
+    display: flex;
+    flex-direction: row;
+}
+
+.behance {
+    display: flex;
+    flex-direction: row;
 }
