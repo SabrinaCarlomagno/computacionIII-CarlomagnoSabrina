@@ -8,13 +8,13 @@ header {
     background-color: rgba(255, 165, 220, 0.356);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2em;
-    padding: 20px 60px 20px 60px;
+    padding: 20px 60px 20px 60px; /*estps paddings están haciendo que se genere un scroll horizontal porque el navegador está calculando el 100% + los paddings, o sea, en mi caso que tengo un monitor de 1920px de ancho, va a calcular 1920+60+60= 2120px en total, lo que no entra en la pantalla. Para arreglarlo, hay que sumar una propiedad más que es box-sizing: border-box; para que contemple el tamaño del padding dentro del 100%*/
 }
 
 header nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center; /*esta propiedad se reemplaza por la siguiente, solo puede haber un solo justify-content*/
     justify-content: space-around;
 }
 
@@ -35,15 +35,15 @@ header a:hover {
     padding-bottom: 40px; 
     gap: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /*esto no está haciendo nada*/
     align-items:flex-end;
 }
 
 .mi-nombre {
-    display: flex;
+    display: flex; /*esto no está haciendo nada ni el resto de las propiedades de flex*/
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 30px;
+    padding-left: 30px; /*en lugar de un padding left podrías ponerle más gap en el padre (foto-nombre) y directamente quitar este selector por completo*/
 }
 
 .foto-personal {
@@ -149,7 +149,7 @@ footer address {
 }
 
 footer a {
-    text-decoration: none;
+    text-decoration: none; /*esta propiedad se está reemplazando por la de la línea 154, solo puede haber un text-decoration*/
     color: rgb(219, 95, 153);
     text-decoration: underline;
     font-size: 1em;
