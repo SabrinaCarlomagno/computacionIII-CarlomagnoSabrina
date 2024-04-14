@@ -5,16 +5,18 @@
 
 header {
     width: 100%;
-    background-color: rgba(255, 165, 220, 0.356);
+    background-color: rgb(255, 214, 238);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2em;
-    padding: 20px 60px 20px 60px; /*estps paddings están haciendo que se genere un scroll horizontal porque el navegador está calculando el 100% + los paddings, o sea, en mi caso que tengo un monitor de 1920px de ancho, va a calcular 1920+60+60= 2120px en total, lo que no entra en la pantalla. Para arreglarlo, hay que sumar una propiedad más que es box-sizing: border-box; para que contemple el tamaño del padding dentro del 100%*/
+    font-size: 25px;
+    padding: 20px 60px 20px 60px; 
+    box-sizing: border-box;
+    position: fixed;
+    font-family: "Lilita One", sans-serif;
 }
 
 header nav {
     display: flex;
     flex-direction: row;
-    justify-content: center; /*esta propiedad se reemplaza por la siguiente, solo puede haber un solo justify-content*/
     justify-content: space-around;
 }
 
@@ -33,17 +35,9 @@ header a:hover {
 
 .foto-nombre {
     padding-bottom: 40px; 
-    gap: 30px;
+    gap: 50px;
     display: flex;
-    flex-direction: row; /*esto no está haciendo nada*/
     align-items:flex-end;
-}
-
-.mi-nombre {
-    display: flex; /*esto no está haciendo nada ni el resto de las propiedades de flex*/
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 30px; /*en lugar de un padding left podrías ponerle más gap en el padre (foto-nombre) y directamente quitar este selector por completo*/
 }
 
 .foto-personal {
@@ -55,7 +49,7 @@ header a:hover {
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: medium;
-    background-color: rgb(245, 245, 236);
+    background-color: rgb(255, 246, 236);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,7 +57,7 @@ body {
 }
 
 main {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
     width: 60%;
 }
@@ -72,6 +66,12 @@ main {
     border: 4px solid pink;
     padding: 20px;
     border-radius: 20px;
+}
+
+.educacion-habilidades {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
 }
 
 h1 {
@@ -83,10 +83,6 @@ h1 {
 
 div {
     padding-top: 20px;
-}
-
-.titulo-educacion {
-    padding-top: 40px;
 }
 
 h4 {
@@ -104,7 +100,7 @@ ul {
 
 li {
     padding-bottom: 15px;
-    list-style: circle;
+    list-style: url(img/flor-bullet.png);
 }
 
 .mis-ilustraciones {
@@ -126,7 +122,7 @@ li {
     padding: 5px;
 }
 
-.hikari-asami {
+.draco {
     padding: 5px;
 }
 
@@ -149,7 +145,6 @@ footer address {
 }
 
 footer a {
-    text-decoration: none; /*esta propiedad se está reemplazando por la de la línea 154, solo puede haber un text-decoration*/
     color: rgb(219, 95, 153);
     text-decoration: underline;
     font-size: 1em;
