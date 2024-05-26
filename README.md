@@ -1,3 +1,2 @@
-# Carlomagno-Sabrina-CV
-Este trabajo fue realizado en Visual Studio Code con html y css en una pantalla de 1920 x 1080.
-El cv tiene un formato más tradicional debido a que es un tipo de formato que me gusta en donde cada tipo de información tiene su caja y estructura. De todas formas en un punto intenté hacer algo diferente más que nada por probar un estilo más de "página web" pero no terminó convenciéndome así que volví a la idea original. Los colores utilizados fueron distintos tonos de rosa ya que es un color que me representa mucho. Además tener la información personal típica de los curriculums, agregué algunas de las ilustraciones que hago por hobby.
+Avances del portfolio
+Hola profe, empecé con el primer html de ilustraciones pero me quedé trabada porque no pude averiguar la forma de hacer el hover que hice sobre las imágenes en el figma, en donde al pasar el cursor la imagen se oscurece y aparece un texto con una breve descripción sobre la misma imagen. Pude lograr que la imagen se oscurezca e intenté un montón de cosas para que aparezca el texto también pero no me salió :(
