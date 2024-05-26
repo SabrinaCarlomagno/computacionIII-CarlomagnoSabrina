@@ -1,1 +1,3 @@
-# CarlomagnoSabrina-CURRICULUM Compu III
+# Carlomagno-Sabrina-CV
+Este trabajo fue realizado en Visual Studio Code con html y css en una pantalla de 1920 x 1080.
+El cv tiene un formato más tradicional debido a que es un tipo de formato que me gusta en donde cada tipo de información tiene su caja y estructura. De todas formas en un punto intenté hacer algo diferente más que nada por probar un estilo más de "página web" pero no terminó convenciéndome así que volví a la idea original. Los colores utilizados fueron distintos tonos de rosa ya que es un color que me representa mucho. Además tener la información personal típica de los curriculums, agregué algunas de las ilustraciones que hago por hobby.
