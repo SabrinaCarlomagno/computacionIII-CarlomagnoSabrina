@@ -5,12 +5,13 @@
 
 header {
     width: 100%;
-    background-color: rgb(255, 214, 238);
+    background-color: #ffd6ee;
     font-size: 25px;
     padding: 20px 60px 20px 60px; 
     box-sizing: border-box;
     position: fixed;
     font-family: "Lilita One", sans-serif;
+    z-index: 5;
 }
 
 header nav {
@@ -23,13 +24,15 @@ a {
 }
 
 header a {
-    color: rgb(219, 95, 153);
+    color: #db5f99;
     text-decoration: none;
 }
 
 header a:hover {
     color: rgb(255, 2, 78);
 }
+
+/* comienzo index */
 
 .foto-nombre {
     padding-bottom: 40px; 
@@ -47,6 +50,10 @@ header a:hover {
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: medium;
+    background-image: url(img/fondo-hojas.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat; 
     background-color: rgb(255, 246, 236);
     display: flex;
     flex-direction: column;
@@ -56,7 +63,7 @@ body {
 
 main {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     width: 60%;
 }
 
@@ -73,7 +80,7 @@ main {
 }
 
 h1 {
-    color: palevioletred;
+    color: rgb(216, 112, 147);
     padding: 20px 20px 20px 0;
     font-size: 3em;
     font-family:Arial, Helvetica, sans-serif;
@@ -88,7 +95,7 @@ h4 {
 }
 
 h2 {
-    color: palevioletred;
+    color: #d87093;
     padding: 20px 0 20px 0;
 }
 
@@ -101,44 +108,96 @@ li {
     list-style: url(img/flor-bullet.png);
 }
 
-.mis-ilustraciones {
-    display: flex;
-    flex-wrap: wrap;
+/* comienzo mis ilustraciones */
+
+.main-ilustraciones {
+    width: 85%;
 }
 
-.mis-ilustraciones img {
+.ilustraciones-personales h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    padding: 250px 0px 250px 0px;
+    font-size: 4.5em;
+    letter-spacing: 3px;
+    color: #DB5F99;
+    text-shadow: 1px 3px 3px #a02a6b;
+}
+
+.ilustraciones-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 10;
+}
+
+.ilustraciones-imagenes {
+    padding: 20px;
+    border-radius: 80px;
+}
+
+.ilustraciones-imagenes img {
     transition: filter 0.5s ease;
 }
 
-.mis-ilustraciones img:hover {
-    filter: brightness(80%);
+.ilustraciones-imagenes img:hover {
+    filter: brightness(50%);
 }
 
-.priest {
-    padding: 5px;
+.priestie-gif {
+    padding: 20px;
+    border-radius: 80px;
 }
 
-.priest-dos {
-    padding: 5px;
+.priestie-soga {
+    padding: 20px;
+    border-radius: 80px;
 }
 
-.crowley {
-    padding: 5px;
+.priestie {
+    padding: 20px;
+    border-radius: 80px;
+}
+
+.crow {
+    padding: 20px;
+    border-radius: 80px;
+}
+
+.luci {
+    padding: 20px;
+    border-radius: 80px;
 }
 
 .draco {
-    padding: 5px;
+    padding: 20px;
+    border-radius: 80px;
 }
 
-p {
-    padding: 5px 20px 20px 5px;
+.eze {
+    padding: 20px;
+    border-radius: 80px;
 }
+
+.hikasami {
+    padding: 20px;
+    border-radius: 80px;
+}
+
+.pri-pre {
+    padding: 20px;
+    border-radius: 80px;
+}
+
+/* footer */
 
 footer {
-    width: 70%;
+    width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(219, 95, 153);
-    background-color: rgba(255, 165, 220, 0.356);
+    background-color: #ffd6ee;
 }
 
 footer address {
@@ -154,7 +213,7 @@ footer a {
 }
 
 footer a:hover {
-    color: deeppink;
+    color: #ff1493;
     background-color: rgba(253, 173, 184, 0.562);
     border-radius: 15px;
     padding: 4px 10px 4px 10px;
@@ -164,19 +223,39 @@ footer a:hover {
 .telefono-wpp {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.telefono-wpp img {
+    padding-right: 10px;
 }
 
 .mail {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.mail img {
+    padding-right: 10px;
 }
 
 .instagram {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.instagram img {
+    padding-right: 10px;
 }
 
 .behance {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.behance img {
+    padding-right: 10px;
 }
