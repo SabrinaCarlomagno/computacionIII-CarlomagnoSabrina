@@ -1,2 +1,2 @@
-Avances del portfolio
+# Avances del portfolio 26-05
 Hola profe, empecé con el primer html de ilustraciones pero me quedé trabada porque no pude averiguar la forma de hacer el hover que hice sobre las imágenes en el figma, en donde al pasar el cursor la imagen se oscurece y aparece un texto con una breve descripción sobre la misma imagen. Pude lograr que la imagen se oscurezca e intenté un montón de cosas para que aparezca el texto también pero no me salió :(
