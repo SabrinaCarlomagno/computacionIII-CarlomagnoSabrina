@@ -1,2 +1,3 @@
-# Avances del portfolio 26-05
-Hola profe, empecé con el primer html de ilustraciones pero me quedé trabada porque no pude averiguar la forma de hacer el hover que hice sobre las imágenes en el figma, en donde al pasar el cursor la imagen se oscurece y aparece un texto con una breve descripción sobre la misma imagen. Pude lograr que la imagen se oscurezca e intenté un montón de cosas para que aparezca el texto también pero no me salió :(
+# Avances 02-06
+Avancé con el html del formulario (aún le faltan algunos ajustes) y pude hacer eso que no me salía de que aparezca texto por encima de la imagen al hacer hover :)
+Al nav le voy a sacar los botones de educación, habilidades e idiomas porque cuando le saqué las imágenes que tenía originalmente el index, éste quedó más pequeño y no tiene sentido que los botones te lleven a una sección predeterminada si ya está todo ahí visible jaja
