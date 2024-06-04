@@ -133,6 +133,10 @@ li {
     z-index: 10;
 }
 
+.ilustraciones-imagenes img {
+    border: solid #DB5F99;
+}
+
 .ilustraciones-imagenes, .ilustraciones-imagenes img {
     border-radius: 80px;
     gap: 40px;
@@ -161,6 +165,7 @@ li {
 
 .texto-priestie-gif:hover, .texto-priestie-soga:hover, .texto-priestie:hover, .texto-crow:hover, .texto-luci:hover, .texto-draco:hover, .texto-eze:hover, .texto-hikasami:hover, .texto-pri-pre:hover {
     opacity: 1;
+    transform: scale(102%);
 }
 
 .ilustraciones-imagenes h3 {
@@ -229,8 +234,13 @@ form label, .p-form-genero {
     margin-bottom: 40px;
 }
 
+.div-form-nombre-apellido {
+    display: flex;
+    flex-direction: row;
+}
+
 .form-nombre input {
-    width: 45%;
+    width: 100%;
     padding: 8px; 
     border: 1px solid #fff6ec;
     border-radius: 10px;
@@ -238,8 +248,12 @@ form label, .p-form-genero {
     cursor: url(img/cursor-texto.png), auto;
 }
 
+.form-apellido {
+    padding-left: 75px;
+}
+
 .form-apellido input {
-    width: 45%;
+    width: 100%;
     padding: 8px; 
     border: 1px solid #fff6ec;
     border-radius: 10px;
@@ -248,7 +262,7 @@ form label, .p-form-genero {
 }
 
 .form-email input {
-    width: 90%;
+    width: 80%;
     padding: 8px; 
     border: 1px solid #fff6ec;
     border-radius: 10px;
@@ -257,7 +271,7 @@ form label, .p-form-genero {
 }
 
 .form-numero input {
-    width: 90%;
+    width: 80%;
     padding: 8px; 
     border: 1px solid #fff6ec;
     border-radius: 10px;
@@ -271,6 +285,7 @@ form label, .p-form-genero {
     border: 1px solid #fff6ec;
     border-radius: 10px;
     box-shadow: 0px 3px 7px rgba(214, 21, 127, 0.5); 
+    cursor: url(img/cursor.png), auto;
 }
 
 .form-localidad input {
