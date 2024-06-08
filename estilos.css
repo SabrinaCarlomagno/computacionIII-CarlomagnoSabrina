@@ -74,7 +74,7 @@ main {
 }
 
 .educacion-habilidades {
-    padding-top: 20px;
+    padding-top: 40px;
     display: flex;
     justify-content: space-around;
 }
@@ -114,7 +114,7 @@ li {
     width: 85%;
 }
 
-.ilustraciones-personales h1 {
+.ilustraciones-personales h1, .disenios h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -199,6 +199,121 @@ video {
     box-shadow: 0 6px 12px rgba(192, 2, 113, 0.3);
 }
 
+/* comienzo diseños */
+
+.main-disenios {
+    width: 100%;
+}
+
+.sinister-fondo {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 740px;
+    width: 100%;
+    animation: cambioFondoSinister 15s infinite;
+}
+
+@keyframes cambioFondoSinister {
+    0% {
+        background-image: url(img/sinister-fondo.jpg);
+    }
+    33.33% {
+        background-image: url(img/sinister-fondo2.jpg);
+    }
+    66.66% {
+        background-image: url(img/sinister-fondo3.jpg);
+    }
+    100% {
+        background-image: url(img/sinister-fondo.jpg);
+    }
+}
+
+.junji-ito-fondo {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 740px;
+    width: 100%; 
+    animation: cambioFondoJunji 13s infinite;
+}
+
+@keyframes cambioFondoJunji {
+    0% {
+        background-image: url(img/junji-ito-fondo.jpg);
+    }
+    33.33% {
+        background-image: url(img/junji-ito-fondo2.jpg);
+    }
+    66.66% {
+        background-image: url(img/junji-ito-fondo3.jpg);
+    }
+    100% {
+        background-image: url(img/junji-ito-fondo.jpg);
+    }
+}
+
+.sinister-posters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 150px;
+    gap: 90px;
+}
+
+.sinister-postales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-top: 130px;
+    gap: 70px;
+    padding-bottom: 150px;
+}
+
+.junji-libro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-top: 150px;
+    gap: 50px;
+}
+
+.img-poster1, .img-publico, .img-postal1, .img-postal2, .img-postal3, .img-libro1, .img-libro2, .img-libro3, .img-libro4 {
+    position: relative;
+    display: block;
+}
+
+.texto-poster1, .texto-publico, .texto-postal1, .texto-postal2, .texto-postal3, .texto-libro1, .texto-libro2, .texto-libro3, .texto-libro4 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.texto-poster1:hover, .texto-publico:hover, .texto-postal1:hover, .texto-postal2:hover, .texto-postal3:hover, .texto-libro1:hover, .texto-libro2:hover, .texto-libro3:hover, .texto-libro4:hover {
+    opacity: 1;
+    transform: scale(102%);
+}
+
+.sinister-piezas h3, .junji-piezas h3 {
+    color: white;
+    font-size: 1.9em;
+    font-weight: 200;
+}
+
 /* comienzo formulario */
 
 .main-formulario {
@@ -207,7 +322,7 @@ video {
 }
 
 .form-section {
-    padding-top: 80px;
+    padding-top: 85px;
     display: flex; 
     justify-content: flex-start;
     align-items: center; 
@@ -240,7 +355,7 @@ form label, .p-form-genero {
 }
 
 .form-nombre input {
-    width: 100%;
+    width: 110%;
     padding: 8px; 
     border: 1px solid #fff6ec;
     border-radius: 10px;
@@ -249,11 +364,11 @@ form label, .p-form-genero {
 }
 
 .form-apellido {
-    padding-left: 75px;
+    margin-left: 60px;
 }
 
 .form-apellido input {
-    width: 100%;
+    width: 110%;
     padding: 8px; 
     border: 1px solid #fff6ec;
     border-radius: 10px;
@@ -279,8 +394,13 @@ form label, .p-form-genero {
     cursor: url(img/cursor-texto.png), auto;
 }
 
+.div-form-nacimiento-localidad {
+    display: flex;
+    flex-direction: row;
+}
+
 .form-nacimiento input {
-    width: 45%;
+    width: 110%;
     padding: 8px; 
     border: 1px solid #fff6ec;
     border-radius: 10px;
@@ -289,12 +409,16 @@ form label, .p-form-genero {
 }
 
 .form-localidad input {
-    width: 45%;
+    width: 110%;
     padding: 8px; 
     border: 1px solid #fff6ec;
     border-radius: 10px;
     box-shadow: 0px 3px 7px rgba(214, 21, 127, 0.5); 
     cursor: url(img/cursor-texto.png), auto;
+}
+
+.form-localidad {
+    margin-left: 60px;
 }
 
 .form-genero p {
@@ -303,6 +427,7 @@ form label, .p-form-genero {
 
 .form-genero label {
     padding-right: 40px;
+    font-weight: 400;
 }
 
 .form-genero input {
@@ -366,11 +491,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #ff1493;
-    background-color: rgba(253, 173, 184, 0.562);
-    border-radius: 15px;
-    padding: 4px 10px 4px 10px;
-    margin: 3px;
+    color: #ff0062;
 }
 
 .telefono-wpp {
@@ -411,4 +532,142 @@ footer a:hover {
 
 .behance img {
     padding-right: 10px;
+}
+
+/* media del index */
+
+@media screen and (max-width: 600px) {
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .foto-nombre {
+        gap: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .divs-index img {
+        transform: scale(1.2);
+    }
+
+    .divs-index {
+        padding-top: 50px;
+        padding-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1 {
+        padding: 0px 0px 20px 0px;
+        font-size: 2em;
+    }
+    
+    h4 {
+        padding-bottom: 15px;
+    }
+
+    .recuadro-rosa p {
+        font-size: 1.2em;
+    }
+    
+    .educacion-habilidades {
+    padding-top: 40px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    li {
+        padding-bottom: 20px;
+        font-size: 1.2em;
+        list-style: url(img/flor-bullet.png);
+    }
+    
+    h2 {
+        padding-top: 15px;
+        padding-bottom: 25px;
+        font-size: 1.7em;
+    }
+    
+    main {
+        width: 70%;
+    }
+
+    .habilidades-class, .educacion, .idiomas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .educacion {
+        width: 65%;
+    }
+
+    footer {
+        width: 100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(219, 95, 153);
+        background-color: #ffd6ee;
+    }
+    
+    footer address {
+        padding: 15px;
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    address p {
+        font-size: 1.2em;
+    }
+
+    footer a {
+        color: rgb(219, 95, 153);
+        text-decoration: underline;
+        font-size: 1em;
+    }
+    
+    footer a:hover {
+        color: #ff0062;
+    }
+    
+    .telefono-wpp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .telefono-wpp img, .mail img, .instagram img, .behance img {
+        padding-right: 0px;
+        transform: scale(1.2);
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    
+    .mail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .instagram {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .behance {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
