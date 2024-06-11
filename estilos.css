@@ -142,12 +142,12 @@ li {
     gap: 40px;
 }
 
-.img-priestie-gif, .img-priestie-soga, .img-priestie, .img-crow, .img-luci, .img-draco, .img-eze, .img-hikasami, .img-pri-pre {
+.img-priestie-gif, .img-priestie-soga, .img-priestie, .img-crow, .img-pri-cruz, .img-draco, .img-eze, .img-hikasami, .img-pri-pre {
     position: relative;
     display: block;
 }
 
-.texto-priestie-gif, .texto-priestie-soga, .texto-priestie, .texto-crow, .texto-luci, .texto-draco, .texto-eze, .texto-hikasami, .texto-pri-pre {
+.texto-priestie-gif, .texto-priestie-soga, .texto-priestie, .texto-crow, .texto-pri-cruz, .texto-draco, .texto-eze, .texto-hikasami, .texto-pri-pre {
     width: 100%;
     height: 100%;
     top: 0;
@@ -163,7 +163,7 @@ li {
     transition: 0.3s;
 }
 
-.texto-priestie-gif:hover, .texto-priestie-soga:hover, .texto-priestie:hover, .texto-crow:hover, .texto-luci:hover, .texto-draco:hover, .texto-eze:hover, .texto-hikasami:hover, .texto-pri-pre:hover {
+.texto-priestie-gif:hover, .texto-priestie-soga:hover, .texto-priestie:hover, .texto-crow:hover, .texto-pri-cruz:hover, .texto-draco:hover, .texto-eze:hover, .texto-hikasami:hover, .texto-pri-pre:hover {
     opacity: 1;
     transform: scale(102%);
 }
@@ -227,6 +227,11 @@ li {
     font-weight: 400;
     font-size: 1.3em;
     font-style: normal;
+}
+
+.ilus:hover {
+    filter: brightness(0.7);
+    transition: 0.6s;
 }
 
 .hikasami-viejos {
