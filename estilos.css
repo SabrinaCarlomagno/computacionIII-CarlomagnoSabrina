@@ -607,9 +607,22 @@ footer a:hover {
 
 @media screen and (max-width: 600px) {
 
+    main {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 100%;
+    }
+    
+    .recuadro-rosa {
+        padding: 20px;
+        margin: 40px;
+        border-radius: 20px;
+    }
+
     header nav {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .foto-nombre {
@@ -645,11 +658,11 @@ footer a:hover {
     }
     
     .educacion-habilidades {
-    padding-top: 40px;
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        padding-top: 40px;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     li {
@@ -664,10 +677,6 @@ footer a:hover {
         font-size: 1.7em;
     }
     
-    main {
-        width: 70%;
-    }
-
     .habilidades-class, .educacion, .idiomas {
         display: flex;
         flex-direction: column;
